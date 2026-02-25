@@ -1,8 +1,10 @@
+streamlit==1.35.0
+altair==4.2.2
 nltk
-spacy
+spacy==3.7.4
 scikit-learn
 pandas
-streamlit
-streamlit-option-menu
 textblob
+streamlit-option-menu
 matplotlib
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
