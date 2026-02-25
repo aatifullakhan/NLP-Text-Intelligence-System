@@ -1,0 +1,8 @@
+nltk
+spacy
+scikit-learn
+pandas
+streamlit
+streamlit-option-menu
+textblob
+matplotlib
