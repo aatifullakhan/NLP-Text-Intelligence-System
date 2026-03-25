@@ -1,6 +1,5 @@
-streamlit
-pandas
-numpy
-scikit-learn
+streamlit>=1.48.0
 textblob
-altair==4.2.2
+nltk
+SpeechRecognition
+fpdf2

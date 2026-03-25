@@ -1,0 +1,8 @@
+# Deploy: connect repo at https://render.com — New Web Service → Docker
+services:
+  - type: web
+    name: nlp-text-intelligence
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /_stcore/health
