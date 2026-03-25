@@ -1,7 +1,7 @@
 # Deploy: connect repo at https://render.com — New Web Service → Docker
 services:
   - type: web
-    name: nlp-text-intelligence
+    name: medscribe
     runtime: docker
     dockerfilePath: ./Dockerfile
     plan: free

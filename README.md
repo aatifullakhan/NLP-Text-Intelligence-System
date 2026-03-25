@@ -1,6 +1,14 @@
-# Doctor-Patient Conversation Recorder
+# MedScribe
 
-Records doctor-patient conversations, transcribes audio, generates medical reports, and suggests possible conditions.
+**MedScribe** is a doctor–patient conversation recorder: it transcribes audio, builds medical reports, suggests possible conditions (reference only), and supports PDF export and WhatsApp sharing.
+
+**Repository:** rename your GitHub repo to `medscribe` if you like (Settings → General → Repository name). Then point your local remote at the new URL:
+
+```bash
+git remote set-url origin https://github.com/YOUR_USERNAME/medscribe.git
+```
+
+(Replace `YOUR_USERNAME` with your GitHub username.)
 
 ## Features
 

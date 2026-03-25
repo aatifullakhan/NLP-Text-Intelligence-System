@@ -1,5 +1,5 @@
 """
-Doctor-Patient Conversation Recorder with NLP Dashboard
+MedScribe — doctor–patient conversation recorder
 Login, audio recording, transcription, medical report, WhatsApp share.
 """
 
@@ -21,7 +21,7 @@ VALID_USERS = {"doctor": "doctor123", "admin": "admin123"}
 
 # UI Settings
 st.set_page_config(
-    page_title="Doctor-Patient Conversation Recorder",
+    page_title="MedScribe",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -87,7 +87,7 @@ for k, default in (("patient_name", ""), ("patient_age", ""), ("patient_bp", "")
 
 # ============ LOGIN PAGE ============
 if not st.session_state.logged_in:
-    st.title("🏥 Doctor-Patient Conversation Recorder")
+    st.title("🏥 MedScribe")
     st.markdown("Please log in to continue.")
     with st.form("login_form"):
         username = st.text_input("Username", placeholder="e.g. doctor")
@@ -164,7 +164,7 @@ def analyze_sentiment(text: str):
 
 
 # Sidebar
-st.sidebar.title("🏥 Conversation Recorder")
+st.sidebar.title("🏥 MedScribe")
 st.sidebar.markdown(f"Logged in as **{st.session_state.username}**")
 if st.sidebar.button("Logout"):
     st.session_state.logged_in = False
@@ -181,7 +181,7 @@ st.sidebar.info(f"**Total messages:** {len(st.session_state.conversations)}")
 
 # ============ RECORD CONVERSATION (Audio) ============
 if page == "🎙️ Record Conversation":
-    st.title("🎙️ Record Doctor-Patient Conversation")
+    st.title("🎙️ Record conversation")
     st.markdown("Record voice from your microphone. Click the mic, speak, then stop. The recording will be transcribed.")
 
     # Record button using st.audio_input (Streamlit 1.48+)
